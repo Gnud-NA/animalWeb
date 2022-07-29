@@ -15,10 +15,11 @@ export class AnimalController {
   @Post('/create')
   @HttpCode(201)
   createAnimal(@Body() animal: AnimalDTO) {
-    try {
-      return this.animalService.createAnimal(animal);
-    } catch (error) {
-      return error;
-    }
+    return this.animalService.createAnimal(animal);
+  }
+  @Post('/create-mail')
+  @HttpCode(201)
+  createMailjet() {
+    //do something
   }
 }

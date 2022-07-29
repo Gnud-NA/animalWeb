@@ -13,4 +13,8 @@ export class AnimalService {
       code: 201,
     };
   }
+
+  createMail() {
+    //do something
+  }
 }
